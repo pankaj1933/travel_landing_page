@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,600;1,700&display=swap');
+
+@import url(./root.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container_css {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* ----------font size----------- */
+
+.fs_1sm {
+    font-size: var(--fs-1sm);
+}
+
+.fs_1md {
+    font-size: var(--fs-1md);
+}
+
+.fs_1lg {
+    font-size: var(--fs-lg);
+}
+
+.fs_2xsm {
+    font-size: var(--fs-2xsm);
+}
+
+.fs_2sm {
+    font-size: var(--fs-2sm);
+}
+
+.fs_2md {
+    font-size: var(--fs-2md);
+}
+
+.fs_2lg {
+    font-size: var(--fs-2lg);
+}
+
+.fs_2xl {
+    font-size: var(--fs-2xl);
+}
+
+.fs_3lg {
+    font-size: var(--fs-3lg);
+}
+
+.fs_4md {
+    font-size: var(--fs-4md);
+}
+
+.fs_4lg {
+    font-size: var(--fs-4lg);
+}
+
+.fs_5lg {
+    font-size: var(--fs-5lg);
+}
+
+.fs_8lg {
+    font-size: var(--fs-8lg);
+}
+
+/* ----font weigth----- */
+.fw_normal {
+    font-weight: var(--fw-normal);
+}
+
+.fw_medium {
+    font-weight: var(--fw-medium);
+}
+
+.fw_semibold {
+    font-weight: var(--fw-semibold);
+}
+
+.fw_bold {
+    font-weight: var(--fw-bold);
+}
+
+/* ----------font family--------- */
+
+.bg_light_yellow {
+    background: #FAF8ED;
+}
+
+.ff_sen {
+    font-family: 'Sen';
+}
+
+.ff_poppins {
+    font-family: 'poppins';
+}
+
+.cl_black_34 {
+    color: #2D3134;
+}
+
+.cl_blue_6b {
+    color: #2E476B;
+}
+
+.cl_orange_4d {
+    color: #F66F4D;
+}
+
+.box_border {
+    border: 1.4px solid #F66F4D;
+    padding: 19px 36px;
+    border-radius: 50px
+}
+
+.po_sticky{
+    position: sticky;
+    top: 0;
+}
+
+
+@media (max-width: 768px) {
+    .iconmenu {
+        position: absolute;
+        top: 50px;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-content: center;
+        background-color: #fff;
+        transition: all 300ms linear;
+    }
+
+    .show{
+        left: 0;
+    }
+
+    .box_border {
+        border: 1.4px solid #F66F4D;
+        padding: 15px 30px;
+        border-radius: 50px
+    }
+    
+}
