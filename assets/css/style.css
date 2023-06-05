@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url(./root.css);
+
 * {
     margin: 0;
     padding: 0;
@@ -96,5 +99,102 @@
     background: #F66F4D;
     box-shadow: 0px 5px 14px rgba(247, 103, 67, 0.25);
     border-radius: 12px;
+
+}
+
+/* ----------font size----------- */
+
+.fs_1sm {
+    font-size: var(--fs-1sm);
+}
+
+.fs_1md {
+    font-size: var(--fs-1md);
+}
+
+.fs_1lg {
+    font-size: var(--fs-lg);
+}
+
+.fs_1xl{
+    font-size: var(--fs-1xl);
+}
+
+.fs_2xsm {
+    font-size: var(--fs-2xsm);
+}
+
+.fs_2sm {
+    font-size: var(--fs-2sm);
+}
+
+.fs_2md {
+    font-size: var(--fs-2md);
+}
+
+.fs_2lg {
+    font-size: var(--fs-2lg);
+}
+
+.fs_2xl {
+    font-size: var(--fs-2xl);
+}
+
+.fs_3lg {
+    font-size: var(--fs-3lg);
+}
+
+.fs_4md {
+    font-size: var(--fs-4md);
+}
+
+.fs_4lg {
+    font-size: var(--fs-4lg);
+}
+
+.fs_5lg {
+    font-size: var(--fs-5lg);
+}
+
+.fs_8lg {
+    font-size: var(--fs-8lg);
+}
+
+/* ----font weigth----- */
+.fw_normal {
+    font-weight: var(--fw-normal);
+}
+
+.fw_medium {
+    font-weight: var(--fw-medium);
+}
+
+.fw_semibold {
+    font-weight: var(--fw-semibold);
+}
+
+.fw_bold {
+    font-weight: var(--fw-bold);
+}
+
+/* ----------font family--------- */
+
+.ff_sen {
+    font-family: 'Sen';
+}
+
+.ff_poppins {
+    font-family: 'poppins';
+}
+
+.ff_inter {
+    font-family: 'Inter', sans-serif;;
+}
+.clr_heading{
+    color: rgba(45, 49, 52, 1);
+
+}
+.clr_paragrabh{
+    color: rgba(103, 106, 108, 1);
 
 }
