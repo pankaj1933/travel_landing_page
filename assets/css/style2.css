@@ -33,7 +33,7 @@
     font-size: var(--fs-lg);
 }
 
-.fs_1xl{
+.fs_1xl {
     font-size: var(--fs-1xl);
 }
 
@@ -118,6 +118,10 @@
     color: #2D3134;
 }
 
+.cl_black_97 {
+    color: #939597;
+}
+
 .cl_blue_6b {
     color: #2E476B;
 }
@@ -126,8 +130,12 @@
     color: #F66F4D;
 }
 
-.cl_black_62{
+.cl_black_62 {
     color: #5B5F62;
+}
+
+.cl_black_a4 {
+    color: #9498A4;
 }
 
 .box_border {
@@ -167,6 +175,24 @@
 }
 
 /* ----------discover------- */
+
+.box {
+    background: #FDFEFF;
+    box-shadow: 0px 28px 56px -6px rgba(246, 111, 77, 0.05);
+    border-radius: 50px;
+}
+
+.Rectangle {
+    width: 54px;
+    height: 54px;
+    background: #F66F4D;
+    border-radius: 31px;
+}
+
+.border_right {
+    border-right: 1px solid #EAEAEB;
+}
+
 .location {
     position: absolute;
     top: 16%;
@@ -175,8 +201,8 @@
 
 .globe {
     position: absolute;
-    top: 16%;
-    right: 8%;
+    top: 25%;
+    right: 0;
 }
 
 .img_card {
@@ -188,20 +214,66 @@
     border-radius: 9.87879px;
 }
 
+.dubai {
+    background: #FFFFFF;
+    border-radius: 4.93939px;
+    position: absolute;
+    top: 28%;
+    right: -14%;
+}
+
 .Ellipse {
-    /* width: 33.34px;
-    height: 33.34px; */
     margin-left: -35px;
 }
 
 .Ellipse3 {
-    /* width: 33.34px;
-    height: 33.34px; */
     margin-left: -35px;
 }
 
-.mb-50{
+.mb-50 {
     margin-bottom: -40px;
+}
+
+/* .-------------catogries------- */
+
+.circle {
+    border: 1px solid #2D3134;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+}
+
+/* ----------our stories------- */
+
+.box_3 {
+    background: #FFFFFF;
+    border-radius: 14px;
+    position: absolute;
+    top: 48%;
+    left: -14%;
+}
+
+.box_4 {
+    background: #FFFFFF;
+    box-shadow: 10px 14px 60px -3px rgba(174, 165, 115, 0.08);
+    border-radius: 10px;
+    position: absolute;
+    bottom: -2%;
+    right: 15%;
+}
+
+.box_5 {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 14px;
+}
+
+.stare_circle {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(165.91deg, #FFECC9 10.03%, #FFD482 139.08%);
+    border-radius: 50%;
+
 }
 
 @media (max-width: 768px) {
@@ -229,4 +301,20 @@
         border-radius: 50px
     }
 
+    .img_card {
+        display: none;
+    }
+}
+
+@media (max-width:576px) {
+    .circle_a {
+        position: absolute;
+        top: 76%;
+        right: 80px;
+    }
+
+    .circle {
+        position: absolute;
+        top: 80%;
+    }
 }
