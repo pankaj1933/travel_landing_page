@@ -21,6 +21,34 @@
     --fs-5lg:56px;
     --fs-8lg:84px;
 
+    @media (min-width:992px) {
+        --fs-1sm:12px;
+        --fs-1md:14px;
+        --fs-1lg:16px;
+        --fs-1xl:18px;
+        --fs-2xsm:20px;
+        --fs-2sm:21px;
+        --fs-2md:24px;
+        --fs-2lg:26px;
+        --fs-2xl:28px;
+        --fs-3lg:30px;
+        --fs-4md:40px;
+        --fs-4lg:46px;
+        --fs-5lg:56px;
+        --fs-8lg:84px;
+    }
+
+    @media (min-width:768px) {
+        --fs-3lg:25px;
+        --fs-2lg:17px;
+        --fs-8lg:80px;
+    }
+    @media (min-width:576px) {
+        --fs-3lg:25px;
+        --fs-2lg:17px;
+        --fs-8lg:50px;
+    }
+
 
     /* font-weight */
     --fw-normal:400;

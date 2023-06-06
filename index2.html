@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./assets/css/style2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>travel landing</title>
+    <link rel="icon" href="../image1/svg1/airoplane.svg">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -22,14 +23,14 @@
 </head>
 
 <body class="bg_light_yellow">
-    <div class="container_css po_stick y bg_light_yellow">
+    <div class="container_css po_stick y bg_light_yellow po_sticky">
         <nav class="d-flex justify-content-between pt-4 align-items-center">
             <div class="d-flex align-items-center">
                 <ul class="m-0 d-flex align-items-center p-0">
                     <li><img src="./image1/svg1/airoplane.svg" alt="airoplane"></li>
                     <li class="ff_sen fw_bold fs_2xsm cl_black_34 ps-2">Salty</li>
                 </ul>
-                <ul class="m-0 d-flex align-items-center gap-4 iconmenu" id="nav_bar">
+                <ul class="m-0 d-flex align-items-center gap-4 iconmenu z-2" id="nav_bar">
                     <li><a class="ff_poppins fs_1lg fw_normal cl_blue_6b li_line position-relative" href="#">Home</a>
                     </li>
                     <li><a class="ff_poppins fs_1lg fw_normal cl_blue_6b li_line position-relative" href="#"> About
@@ -42,11 +43,11 @@
                     </li>
                 </ul>
             </div>
-            <button class="m-0 d-flex align-items-center box_border bg_light_yellow">
+            <button class="m-0 d-flex align-items-center box_border bg_light_yellow go_plane">
                 <p class="m-0 ff_poppins fs_1lg fw_medium cl_orange_4d pe-1">book now</p>
-                <img class="pe-md-4" src="./image1/svg1/airpen.svg" alt="logo">
+                <img class="pe-md-4 go_plane" src="./image1/svg1/airpen.svg" alt="logo">
             </button>
-            <a class="cl_black_34 fs_3lg z-1 d-md-none align-items-center" onclick="travel_nav()">
+            <a class="cl_black_34 fs_3lg z-1 d-md-none align-items-center z-3" onclick="travel_nav()">
                 <i class="fa fa-bars"></i>
             </a>
         </nav>
@@ -54,11 +55,12 @@
 
     <!-- discover section stsrt here -->
     <section>
-        <div class="container_css">
-            <div class="row justify-content-between">
-                <div class="col-xl-6 pt-5 mt-2">
+        <div class="container_css py-xl-5">
+            <div class="row justify-content-between py-xl-5">
+                <div class="col-xl-6 pt-xl-5 pt-3 mt-xl-5">
                     <h1 class="ff_sen fw_bold fs_8lg cl_black_34 pt-5 m-0">Discover the Best Lovely Places</h1>
-                    <p class="ff_inter fw_normal fs_1xl cl_black_62 m-0 pt-3 pb-5">Plan and book your perfect trip with
+                    <p class="ff_inter fw_normal fs_1xl cl_black_62 m-0 py-3 py-xl-5">Plan and book your perfect trip
+                        with
                         expert advice, travel tips, destination information and
                         inspiration from us.</p>
                     <div class="box">
@@ -87,12 +89,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-5 d-flex justify-content-center m-au to">
-                    <div class="position-relative">
-                        <img class="w-100 pt-sm-5" src="./image1/png1/traveler-agent.png" alt="traveler">
+                <div class="col-xl-5 d-flex justify-content-center Z_0">
+                    <div class="position-relative card_set">
+                        <img class="w-100 pt-sm-5 py-5" src="./image1/png1/traveler-agent.png" alt="traveler">
                         <img class="location" src="./image1/svg1/location.svg" alt="location">
                         <img class="globe" src="./image1/svg1/Orion_globe.svg" alt="Orion_globe">
-                        <div class="img_card d-inline-block align-items-center">
+                        <div class="img_card d-inline-block align-items-center zoom_in">
                             <img src="./image1/png1/reagistan.png" alt="reagistan">
                             <div class="dubai d-flex align-items-center justify-content-center px-1">
                                 <span>
@@ -144,52 +146,90 @@
             </div>
             <div class="row py-5 ">
                 <div class="tour">
-                    <div class="d-flex justify-content-center align-items-center flex-column">
-                        <a class="m-0 p-0" href=""> <img src="./image1/png1/beach.png" alt=""></a>
+                    <div class="d-flex justify-content-center align-items-center flex-column position-relative hov_img">
+                        <div
+                            class="d-flex justify-content-center align-items-center flex-column position-relative hov_img">
+                            <a class="m-0 p-0" href=""> <img src="./image1/png1/beach.png" alt=""></a>
+                            <p class="position-absolute hov_text ff_inter fw_semibold fs_2xsm text-white">visite</p>
+                        </div>
                         <p class="ff_inter fw_medium fs_2lg cl_black_34 m-0 pt-2">Beach</p>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center flex-column"><a href=""> <img
-                                src="./image1/png1/desert.png" alt=""></a>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <div class="d-flex justify-content-center align-items-center position-relative hov_img">
+                            <a href=""><img src="./image1/png1/desert.png" alt=""></a>
+                            <p class="position-absolute hov_text ff_inter fw_semibold fs_2xsm text-white">visite</p>
+                        </div>
                         <p class="ff_inter fw_medium fs_2lg cl_black_34 m-0 pt-2">Desert</p>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center flex-column"> <a href=""> <img
-                                src="./image1/png1/mountin.png" alt=""></a>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <div class="d-flex justify-content-center align-items-center position-relative hov_img">
+                            <a href=""> <img src="./image1/png1/mountin.png" alt=""></a>
+                            <p class="position-absolute hov_text ff_inter fw_semibold fs_2xsm text-white">visite</p>
+                        </div>
                         <p class="ff_inter fw_medium fs_2lg cl_black_34 m-0 pt-2">Mountain</p>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center flex-column"><a href=""> <img
-                                src="./image1/png1/temple.png" alt=""></a>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <div class="d-flex justify-content-center align-items-center position-relative hov_img">
+                            <a href=""> <img src="./image1/png1/temple.png" alt=""></a>
+                            <p class="position-absolute hov_text ff_inter fw_semibold fs_2xsm text-white">visite</p>
+                        </div>
                         <p class="ff_inter fw_medium fs_2lg cl_black_34 m-0 pt-2">Temple</p>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center flex-column"><a href=""> <img
-                                src="./image1/png1/tower.png" alt=""></a>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <div class="d-flex justify-content-center align-items-center position-relative hov_img">
+                            <a href=""> <img src="./image1/png1/tower.png" alt=""></a>
+                            <p class="position-absolute hov_text ff_inter fw_semibold fs_2xsm text-white">visite</p>
+                        </div>
                         <p class="ff_inter fw_medium fs_2lg cl_black_34 m-0 pt-2">Tower</p>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center flex-column"><a href=""> <img
-                                src="./image1/png1/pyramid.png" alt=""></a>
+                    <div class="d-flex justify-content-center align-items-center flex-column position-relative hov_img">
+                        <div class="d-flex justify-content-center align-items-center flex-column">
+                            <a href=""> <img src="./image1/png1/pyramid.png" alt=""></a>
+                            <p class="position-absolute hov_text ff_inter fw_semibold fs_2xsm text-white">visite</p>
+                        </div>
                         <p class="ff_inter fw_medium fs_2lg cl_black_34 m-0 pt-2">Pyramid</p>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center flex-column">
-                        <a class="m-0 p-0" href=""> <img src="./image1/png1/beach.png" alt=""></a>
+                    <div class="d-flex justify-content-center align-items-center flex-column position-relative hov_img">
+                        <div
+                            class="d-flex justify-content-center align-items-center flex-column position-relative hov_img">
+                            <a class="m-0 p-0" href=""> <img src="./image1/png1/beach.png" alt=""></a>
+                            <p class="position-absolute hov_text ff_inter fw_semibold fs_2xsm text-white">visite</p>
+                        </div>
                         <p class="ff_inter fw_medium fs_2lg cl_black_34 m-0 pt-2">Beach</p>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center flex-column"><a href=""> <img
-                                src="./image1/png1/desert.png" alt=""></a>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <div class="d-flex justify-content-center align-items-center position-relative hov_img">
+                            <a href=""><img src="./image1/png1/desert.png" alt=""></a>
+                            <p class="position-absolute hov_text ff_inter fw_semibold fs_2xsm text-white">visite</p>
+                        </div>
                         <p class="ff_inter fw_medium fs_2lg cl_black_34 m-0 pt-2">Desert</p>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center flex-column"> <a href=""> <img
-                                src="./image1/png1/mountin.png" alt=""></a>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <div class="d-flex justify-content-center align-items-center position-relative hov_img">
+                            <a href=""> <img src="./image1/png1/mountin.png" alt=""></a>
+                            <p class="position-absolute hov_text ff_inter fw_semibold fs_2xsm text-white">visite</p>
+                        </div>
                         <p class="ff_inter fw_medium fs_2lg cl_black_34 m-0 pt-2">Mountain</p>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center flex-column"><a href=""> <img
-                                src="./image1/png1/temple.png" alt=""></a>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <div class="d-flex justify-content-center align-items-center position-relative hov_img">
+                            <a href=""> <img src="./image1/png1/temple.png" alt=""></a>
+                            <p class="position-absolute hov_text ff_inter fw_semibold fs_2xsm text-white">visite</p>
+                        </div>
                         <p class="ff_inter fw_medium fs_2lg cl_black_34 m-0 pt-2">Temple</p>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center flex-column"><a href=""> <img
-                                src="./image1/png1/tower.png" alt=""></a>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <div class="d-flex justify-content-center align-items-center position-relative hov_img">
+                            <a href=""> <img src="./image1/png1/tower.png" alt=""></a>
+                            <p class="position-absolute hov_text ff_inter fw_semibold fs_2xsm text-white">visite</p>
+                        </div>
                         <p class="ff_inter fw_medium fs_2lg cl_black_34 m-0 pt-2">Tower</p>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center flex-column"><a href=""> <img
-                                src="./image1/png1/pyramid.png" alt=""></a>
+                    <div class="d-flex justify-content-center align-items-center flex-column position-relative hov_img">
+                        <div class="d-flex justify-content-center align-items-center flex-column">
+                            <a href=""> <img src="./image1/png1/pyramid.png" alt=""></a>
+                            <p class="position-absolute hov_text ff_inter fw_semibold fs_2xsm text-white">visite</p>
+                        </div>
                         <p class="ff_inter fw_medium fs_2lg cl_black_34 m-0 pt-2">Pyramid</p>
                     </div>
                 </div>
@@ -201,52 +241,110 @@
         <div class="container_css">
             <div class="row py-5">
                 <div class="col-lg-6 col-8 m-auto">
-                    <div class="position-relative">
-                        <img src="./image1/png1/camera-man.png" alt="">
-                        <div class="box_4 d-inline-block text-center px-4 p-2">
+                    <div class="position-relative ">
+                        <img class="w-100" src="./image1/png1/camera-man.png" alt="">
+                        <div class="box_4 d-inline-block text-center px-lg-4 px-sm-3 p-2">
                             <span class="d-flex">
                                 <img src="./image1/svg1/wifi.svg" alt="">
                                 <p class="ff_poppins fw_semibold fs_2xl cl_black_34 m-0 ps-2">5000+</p>
                             </span>
                             <p class="ff_poppins fw_normal fs_1sm cl_black_62 m-0 pt-1">Customars</p>
                         </div>
-                        <div class="box_3 d-inline-block text-center px-3 py-3">
+                        <div class="box_3 d-inline-block text-center px-lg-3 px-sm-2 py-3">
                             <span class="stare_circle d-flex justify-content-center align-content-center m-auto">
                                 <img class="w-100 p-3" src="./image1/svg1/stare.svg" alt="stare">
                             </span>
                             <p class="ff_poppins fw_semibold fs_3lg cl_orange_4d m-0 pt-3 pb-1">600%</p>
-                            <p class="ff_inter fw_normal fs_1xl cl_black_97 px-2 m-0">Destinations</p>
+                            <p class="ff_inter fw_normal fs_1xl cl_black_97 px--xl-2 m-0">Destinations</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <p class="ff_inter fw_semibold fs_2sm cl_orange_4d m-0 pb-2 pt-5">Our Experience</p>
-                    <h2 class="ff_inter fw_semibold fs_5lg cl_black_34 m-0 pb-2">Our Stories Have Adventures</h2>
-                    <p class="ff_inter fw_normal fs_1lg cl_black_62 m-0 pb-2">We are experienced in bringing adventures
+                    <p class="ff_inter fw_semibold fs_2sm cl_orange_4d m-0 pt-5">Our Experience</p>
+                    <h2 class="ff_inter fw_semibold fs_5lg cl_black_34 m-0 my-3">Our Stories Have Adventures</h2>
+                    <p class="ff_inter fw_normal fs_1lg cl_black_62 m-0 pb-5">We are experienced in bringing adventures
                         to stay their journey, with all outdoor destinations in the world as our specialties. Start your
                         adventure now! Nature has already called you!</p>
                     <div class="row">
-                        <div class="col-lg-4">
-                            <div class="box_5">
-                                <h2>12K+</h2>
-                                <p>Succes Journey</p>
+                        <div class="col-sm-4 col-6">
+                            <div class="box_5 zoom_in d-inline-block p-4">
+                                <h2 class="ff_inter fw_semibold fs_4lg cl_orange_4d m-0">12K+</h2>
+                                <p class="ff_inter fw_normal fs_2sm cl_black_97">Succes <br> Journey</p>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="box_5">
-                                <h2>12K+</h2>
-                                <p>Succes Journey</p>
+                        <div class="col-sm-4 col-6">
+                            <div class="box_5 zoom_in d-inline-block p-4 px-5">
+                                <h2 class="ff_inter fw_semibold fs_4lg cl_orange_4d m-0">16+</h2>
+                                <p class="ff_inter fw_normal fs_2sm cl_black_97">Awards<br> Winning</p>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="box_5">
-                                <h2>12K+</h2>
-                                <p>Succes Journey</p>
+                        <div class="col-sm-4 col-6 m-auto">
+                            <div class="box_5 zoom_in d-inline-block mt-4 mt-sm-0 p-4">
+                                <h2 class="ff_inter fw_semibold fs_4lg cl_orange_4d m-0">20+</h2>
+                                <p class="ff_inter fw_normal fs_2sm cl_black_97">Years Of<br> Experience</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+    <!-- popular destination -->
+    <section>
+        <div class="container_css">
+            <div class="row py-4">
+                <div class="col-sm-4">
+                    <h2 class="ff_inter fw_semibold fs_5lg cl_black_34">Categories</h2>
+                    <p class="ff_inter fw_normal fs_1lg cl_black_62">Here are lots of interesting destinations to visit,
+                        but don’t be confused—they’re already grouped by category.</p>
+                </div>
+                <div class="col-sm-8 d-flex justify-content-end">
+                    <span class="circle d-flex justify-content-center align-items-center ">
+                        <a href=""><svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 13L1 7L7 1" stroke="#2D3134" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></a>
+                    </span>
+                    <span class="circle d-flex justify-content-center align-items-center ms-3">
+                        <a href=""><svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13L7 7L1 1" stroke="#2D3134" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg> </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="place d-inline-block my-5 ms-4">
+                <img class=" p-2 pb-3" src="./image1/png1/mountain.png" alt="mountain">
+                <h2 class="ff_inter fw_semibold fs_2md cl_black_34 m-0 pb-2 ps-3">Mountain Hiking Tour</h2>
+                <p class="ff_inter fw_semibold fs_1md cl_black_62 m-0  ps-3">Mountain Hiking Tour</p>
+                <p class="ff_inter fw_semibold fs_2xsm cl_black_34 m-0 py-4 ps-3">$89 <span
+                        class="ff_inter fw_normal fs_1lg">/Person</span></p>
+            </div>
+            <div class="place d-inline-block my-5 ms-4">
+                <img class=" p-2 pb-3" src="./image1/png1/mountain.png" alt="mountain">
+                <h2 class="ff_inter fw_semibold fs_2md cl_black_34 m-0 pb-2 ps-3">Mountain Hiking Tour</h2>
+                <p class="ff_inter fw_semibold fs_1md cl_black_62 m-0  ps-3">Mountain Hiking Tour</p>
+                <p class="ff_inter fw_semibold fs_2xsm cl_black_34 m-0 py-4 ps-3">$89 <span
+                        class="ff_inter fw_normal fs_1lg">/Person</span></p>
+            </div>
+            <div class="place d-inline-block my-5 ms-4">
+                <img class=" p-2 pb-3" src="./image1/png1/mountain.png" alt="mountain">
+                <h2 class="ff_inter fw_semibold fs_2md cl_black_34 m-0 pb-2 ps-3">Mountain Hiking Tour</h2>
+                <p class="ff_inter fw_semibold fs_1md cl_black_62 m-0  ps-3">Mountain Hiking Tour</p>
+                <p class="ff_inter fw_semibold fs_2xsm cl_black_34 m-0 py-4 ps-3">$89 <span
+                        class="ff_inter fw_normal fs_1lg">/Person</span></p>
+            </div>
+            <div class="place d-inline-block my-5 ms-4">
+                <img class=" p-2 pb-3" src="./image1/png1/mountain.png" alt="mountain">
+                <h2 class="ff_inter fw_semibold fs_2md cl_black_34 m-0 pb-2 ps-3">Mountain Hiking Tour</h2>
+                <p class="ff_inter fw_semibold fs_1md cl_black_62 m-0  ps-3">Mountain Hiking Tour</p>
+                <p class="ff_inter fw_semibold fs_2xsm cl_black_34 m-0 py-4 ps-3">$89 <span
+                        class="ff_inter fw_normal fs_1lg">/Person</span></p>
             </div>
         </div>
     </section>
@@ -302,10 +400,17 @@
                         slidesToScroll: 1,
                         infinite: true,
                     }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    }
                 }
             ]
         });
-
     </script>
 </body>
 
