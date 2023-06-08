@@ -21,7 +21,7 @@
     --fs-5lg:56px;
     --fs-8lg:84px;
 
-    @media (min-width:992px) {
+    @media (max-width:992px) {
         --fs-1sm:12px;
         --fs-1md:14px;
         --fs-1lg:16px;
@@ -38,14 +38,16 @@
         --fs-8lg:84px;
     }
 
-    @media (min-width:768px) {
+    @media (max-width:768px) {
         --fs-3lg:25px;
         --fs-2lg:17px;
-        --fs-8lg:80px;
+        --fs-8lg:70px;
     }
-    @media (min-width:576px) {
-        --fs-3lg:25px;
+    @media (max-width:576px) {
         --fs-2lg:17px;
+        --fs-3lg:25px;
+        --fs-4lg:40px;
+        --fs-5lg:43px;
         --fs-8lg:50px;
     }
 

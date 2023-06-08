@@ -142,19 +142,19 @@
     border: 1.4px solid #F66F4D;
     padding: 19px 36px;
     border-radius: 50px;
-    transition: ease-in-out 300ms;
+    transition: all 300ms ease-in-out;
 }
 
 .box_border:hover {
-    background: #000;
+    background: #5B5F62;
 }
 
-.zoom_in{
+.zoom_in {
     transition: all 200ms linear;
 }
 
-.zoom_in:hover{
-    scale:1.1;
+.zoom_in:hover {
+    scale: 1.1;
     box-shadow: 0px 28px 56px -6px rgba(241, 208, 46, 0.733);
 }
 
@@ -163,9 +163,6 @@
     top: 0;
 }
 
-.Z_0{
-    z-index: -0;
-}
 
 .li_line::after {
     content: '';
@@ -179,24 +176,25 @@
 }
 
 .li_line:hover::after {
-    width: 50%;
-   
+    width: 25%;
+
 }
 
 .li_line:hover {
     color: #F66F4D;
 }
 
-.go_plane{
-    animation: go_plae 5s linear 2s infinite alternate;
+.go_plane {
+    animation: go_plane 2s linear 2s infinite alternate;
 }
 
-@keyframes go_plane{
-    0%{
-        transform: translateY(0, 20px);
+@keyframes go_plane {
+    0% {
+        transform: translate(10px, -10px);
     }
-    100%{
-        transform: translateY( 0, 30px);
+
+    100% {
+        transform: translate(0, 0px);
     }
 }
 
@@ -213,6 +211,49 @@
     height: 54px;
     background: #F66F4D;
     border-radius: 31px;
+}
+
+.up-to {
+    animation-name: up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes up {
+    0% {
+        transform: translate(0, -10px);
+    }
+
+    100% {
+        transform: translate(0, 10px);
+    }
+}
+
+.rotate {
+    animation-name: rotate;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+.Rectangle:hover .search {
+    scale: 1.2;
+}
+
+.search {
+    transition: all 200ms ease-in-out;
 }
 
 .border_right {
@@ -234,7 +275,7 @@
 .img_card {
     background: #FFFFFF;
     position: absolute;
-    top: 69%;
+    top: 62%;
     left: -12%;
     box-shadow: 0px 14px 24px -10px rgba(226, 154, 53, 0.2);
     border-radius: 9.87879px;
@@ -256,8 +297,40 @@
     margin-left: -35px;
 }
 
+.search {
+    transition: all 300ms ease;
+}
+
+.agent:hover {
+    scale: 1.1;
+}
+
 .mb-50 {
     margin-bottom: -40px;
+}
+
+.book_now {
+    border: 1px solid #2D3134;
+    background: #FAF8ED;
+    border-radius: 40px;
+    padding: 12px 16px;
+    transition: all 300ms ease-out;
+}
+
+.book_now:hover{
+    background: #2D3134;
+    color: #fff;
+}
+
+.customer_slider {
+    overflow: visible;
+    padding: 0 0 0 20%;
+    position: relative;
+    z-index: -1;
+}
+
+.z_1 {
+    z-index: -1;
 }
 
 /* .-------------catogries------- */
@@ -268,9 +341,39 @@
     width: 54px;
     height: 54px;
     border-radius: 50%;
+    transition: all 200ms ease-in;
+}
+
+.circle:hover {
+    background: #2D3134;
+}
+
+.circle:hover path {
+    stroke: white;
+}
+
+.img_layer:hover:after {
+    content: 'visite';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 85px;
+    color: #ffffff;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'inter';
 }
 
 /* ----------our stories------- */
+.slick-sl ide {
+    transform: translateX(-165px);
+}
 
 .box_3 {
     background: #FFFFFF;
@@ -280,16 +383,35 @@
     left: -14%;
 }
 
+.zoom_out{
+    animation-name: zoom_out;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes zoom_out{
+0%{
+    transform: scale(1.1);
+}
+100%{
+    transform: scale(1);
+}
+}
+
 .box_4 {
     background: #FFFFFF;
     box-shadow: 10px 14px 60px -3px rgba(174, 165, 115, 0.08);
     border-radius: 10px;
-    position: absolute;
-    bottom: -2%;
-    right: 0;
 }
 
-
+.custemer {
+    /* position: absolute; */
+    /* bottom: -2% !important;
+    right: 13% !important; */
+    transform: translate(185%, -85%);
+}
 
 .box_5 {
     background: rgba(255, 255, 255, 0.7);
@@ -311,21 +433,34 @@
     border: 2px solid #FFFFFF;
     box-shadow: 0px 24px 90px rgba(192, 188, 161, 0.22);
     border-radius: 16px;
+    width: 386px;
 }
 
-.hov_text{
+.slider .slick-list {
+    overflow: visible;
+    padding: 0 0% 0 0%;
+    position: relative;
+}
+
+.slider .slick-list::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 100%;
+    bottom: 0px;
+    background-color: #FAF8ED;
+    width: 4000px;
+}
+
+.hov_text {
     display: none;
-    /* transform: translate(50%, 50%); */
 }
 
-.hov_img:hover .hov_text{
-display: unset;
+.hov_img:hover .hov_text {
+    display: unset;
 }
 
-
-/* .place{
-    transform:translateX(150px)
-} */
+@media (max-width:1200px) {}
 
 @media (max-width: 768px) {
     .iconmenu {
@@ -364,15 +499,14 @@ display: unset;
         right: 80px;
     }
 
-    .circle {
+    .circle_b {
         position: absolute;
-        top: 80%;
+        top: 76%;
     }
 
-    /* .card_set {
-        transform: translateX(50px);
-        width: 80%;
-    } */
+    .img_w100 {
+        width: 100%;
+    }
 
     .location {
         position: absolute;
@@ -387,40 +521,14 @@ display: unset;
     }
 }
 
-@media (min-width:992px) {
-    .box_3 {
-        background: #FFFFFF;
-        border-radius: 14px;
-        position: absolute;
-        top: 48%;
-        left: -5%;
-    }
-
-    .box_4 {
-        background: #FFFFFF;
-        box-shadow: 10px 14px 60px -3px rgba(174, 165, 115, 0.08);
-        border-radius: 10px;
-        position: absolute;
-        bottom: -2%;
-        right: -11%;
+@media (min-width:576px) {
+    .custemer {
+        transform: translate(330px, -85px);
     }
 }
 
-@media (min-width:1170px) {
-    .box_3 {
-        background: #FFFFFF;
-        border-radius: 14px;
-        position: absolute;
-        top: 48%;
-        left: -14%;
-    }
-
-    .box_4 {
-        background: #FFFFFF;
-        box-shadow: 10px 14px 60px -3px rgba(174, 165, 115, 0.08);
-        border-radius: 10px;
-        position: absolute;
-        bottom: -2%;
-        right: -5%;
+@media (min-width:992px) {
+    .custemer {
+        transform: translate(185%, -85%);
     }
 }
