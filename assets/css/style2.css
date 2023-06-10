@@ -17,6 +17,7 @@
     margin-right: auto;
     padding-left: 12px;
     padding-right: 12px;
+    border: 2px solid red;
 }
 
 /* ----------font size----------- */
@@ -346,6 +347,8 @@
 
 .circle:hover {
     background: #2D3134;
+    border: none !important;;
+    outline: none !important;
 }
 
 .circle:hover path {
@@ -407,9 +410,6 @@
 }
 
 .custemer {
-    /* position: absolute; */
-    /* bottom: -2% !important;
-    right: 13% !important; */
     transform: translate(185%, -85%);
 }
 
@@ -434,6 +434,7 @@
     box-shadow: 0px 24px 90px rgba(192, 188, 161, 0.22);
     border-radius: 16px;
     width: 386px;
+    overflow: hidden;
 }
 
 .slider .slick-list {
@@ -450,6 +451,16 @@
     bottom: 0px;
     background-color: #FAF8ED;
     width: 4000px;
+}
+
+.slider .place:hover img{
+    transform: scale(1.5);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.img_zoom{
+    transition: all 0.5s linear;
 }
 
 .hov_text {
