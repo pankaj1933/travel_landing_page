@@ -141,7 +141,7 @@
 
 .box_border {
     border: 1.4px solid #F66F4D;
-    padding: 19px 36px;
+    padding: 19px 34px;
     border-radius: 50px;
     transition: all 300ms ease-in-out;
 }
